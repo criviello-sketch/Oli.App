@@ -4,8 +4,8 @@ self.addEventListener("push", (e) => {
     self.registration.showNotification(d.title || "Oli.App", {
       body: d.body || "",
       image: d.image,
-      icon: "icon.png",
-      badge: "icon.png",
+      icon: "oli-icon.png",
+      badge: "oli-icon.png",
     })
   );
 });
