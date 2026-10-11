@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.png">
+  <title>Oli.App</title>
+  <style>
+    body{font-family:system-ui,sans-serif;max-width:480px;margin:0 auto;padding:24px;text-align:center;background:#f8fafc;color:#1e293b}
+    img.logo{width:96px;height:96px;border-radius:24px}
+    button{background:#4f46e5;color:#fff;border:0;border-radius:12px;padding:14px 24px;font-size:1rem;cursor:pointer}
+    button:disabled{opacity:.5}
+    textarea{width:100%;margin-top:12px;font-family:monospace;font-size:.75rem}
+    #estado{margin:16px 0;min-height:1.5em}
+    .oculto{display:none}
+  </style>
+</head>
+<body>
+  <img class="logo" src="icon.png" alt="Oli.App">
+  <h1>Oli.App</h1>
+  <p>Un dibujo y un mensaje cada tanto.</p>
+  <button id="activar">Activar notificaciones</button>
+  <p id="estado"></p>
+  <div id="codigo" class="oculto">
+    <p>Copiá este código y pegalo en GitHub (secret <b>SUBSCRIPTIONS</b>):</p>
+    <textarea id="sub" rows="8" readonly></textarea>
+    <button id="copiar" style="margin-top:8px">Copiar</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
